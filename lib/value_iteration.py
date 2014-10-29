@@ -15,7 +15,7 @@
 
 import random
 
-GOAL = 2 # Win if you get to this point
+GOAL = 5 # Win if you get to this point
 THRESH = 0.001
 
 # Init p values
