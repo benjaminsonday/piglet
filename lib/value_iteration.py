@@ -59,7 +59,7 @@ while worst_diff > THRESH:
 
 # Sort by safe_score, then this_score, then opponent_score
 def compare_states(x, y):
-  return (x[0] - y[0]) * 100 + (x[1] - y[1]) * 10 + (x[2] - y[2])
+  return (x[0] - y[0]) * GOAL * GOAL + (x[1] - y[1]) * GOAL + (x[2] - y[2])
 
 print("State (My Safe Score, My Risk Score, Opp. Score) / Best Action / Prob")
 for state in sorted(new_p.keys(), cmp = compare_states):
